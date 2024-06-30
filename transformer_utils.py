@@ -5,8 +5,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from functools import partial
-from timm.layers import DropPath
-from timm.layers.helpers import to_2tuple
+from timm.models.layers import DropPath
+from timm.models.layers import to_2tuple
 
 torch_version = torch.__version__
 is_torch2 = torch_version.startswith('2.') 
@@ -39,18 +39,18 @@ class Attention(nn.Module):
         self.scale = qk_scale or head_dim ** -0.5
 
         self.qkv = nn.Linear(dim, dim * 3, bias=qkv_bias)
+
         if is_torch2:
             self.attn_drop = attn_drop
         else:
             self.attn_drop = nn.Dropout(attn_drop)
-        self.proj = nn.Linear(dim, dim)
-        self.proj_drop = nn.Dropout(proj_drop)
+            self.proj = nn.Linear(dim, dim)
+            self.proj_drop = nn.Dropout(proj_drop)
 
     def forward(self, x):
         B, N, C = x.shape
         qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, C // self.num_heads).permute(2, 0, 3, 1, 4)
         q, k, v = qkv[0], qkv[1], qkv[2]   # make torchscript happy (cannot use tensor as tuple)
-
         if is_torch2:
             attn = F.scaled_dot_product_attention(
                 q, k, v, dropout_p=self.attn_drop,
@@ -79,8 +79,8 @@ class CrossAttention(nn.Module):
             self.attn_drop = attn_drop
         else:
             self.attn_drop = nn.Dropout(attn_drop)
-        self.proj = nn.Linear(decoder_dim, decoder_dim)
-        self.proj_drop = nn.Dropout(proj_drop)
+            self.proj = nn.Linear(decoder_dim, decoder_dim)
+            self.proj_drop = nn.Dropout(proj_drop)
 
     def forward(self, x, y):
         """
@@ -91,7 +91,6 @@ class CrossAttention(nn.Module):
         q = self.q(x).reshape(B, N, self.num_heads, C // self.num_heads).permute(0, 2, 1, 3)
         kv = self.kv(y).reshape(B, Ny, 2, self.num_heads, C // self.num_heads).permute(2, 0, 3, 1, 4)
         k, v = kv[0], kv[1]
-
         if is_torch2:
             attn = F.scaled_dot_product_attention(
                 q, k, v, dropout_p=self.attn_drop,

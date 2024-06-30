@@ -14,6 +14,7 @@ import PIL
 from torchvision import datasets, transforms
 
 from timm.data import create_transform
+from torchvision import datasets, transforms
 from timm.data.constants import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
 
 
@@ -24,6 +25,14 @@ def build_dataset(is_train, args):
     dataset = datasets.ImageFolder(root, transform=transform)
 
     print(dataset)
+
+    return dataset
+
+def build_test_dataset(is_train, args):
+    transform = build_transform(is_train, args)
+
+    root = args.data_path
+    dataset = datasets.CIFAR10(root, train=is_train, download=True, transform=transform)
 
     return dataset
 

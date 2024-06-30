@@ -19,8 +19,11 @@ from pathlib import Path
 import torch
 import torch.backends.cudnn as cudnn
 from torch.utils.tensorboard import SummaryWriter
+from torchvision.transforms import Lambda
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
+from torch.utils.data import Subset
+
 
 import timm
 from timm.data.loader import MultiEpochsDataLoader
@@ -33,14 +36,15 @@ from util.misc import NativeScalerWithGradNormCount as NativeScaler
 from transformer_utils import handle_flash_attn
 
 import models_mae
-import models_cross
+import models_cross as models_cross
 
 from engine_pretrain import train_one_epoch
 
 
 def get_args_parser():
     parser = argparse.ArgumentParser('MAE pre-training', add_help=False)
-    parser.add_argument('--batch_size', default=64, type=int,
+    # TODO : set batch_size 1 for adding diffusion module
+    parser.add_argument('--batch_size', default=1, type=int,
                         help='Batch size per GPU (effective batch size is batch_size * accum_iter * # gpus')
     parser.add_argument('--epochs', default=400, type=int)
     parser.add_argument('--accum_iter', default=1, type=int,
@@ -56,10 +60,10 @@ def get_args_parser():
     parser.add_argument('--decoder_depth', default=8, type=int, 
                         help='depth of decoder')
 
-    parser.add_argument('--mask_ratio', default=0.75, type=float,
+    parser.add_argument('--mask_ratio', default=0.9, type=float,
                         help='Masking ratio (1 - percentage of remained patches).')
 
-    parser.add_argument('--kept_mask_ratio', default=0.75, type=float,
+    parser.add_argument('--kept_mask_ratio', default=0.9, type=float,
                         help='Amongst the all tokens, the percentage of the mask that are kept')
     parser.add_argument('--inverse_lr', action='store_true', default=False, help='Use inverse lr scheduler')
     parser.add_argument('--no_lr_scale', action='store_true', default=False, help='Do not scale lr by mask_ratio')
@@ -129,7 +133,9 @@ def get_args_parser():
                         help="use input as a feature map")
     parser.add_argument('--self_attn', action='store_true', default=False, help="use self attention in decoder")
     
-    parser.add_argument('--enable_flash_attention2', action='store_true', default=False, help="Use flash attntion 2")
+    parser.add_argument('--enable_flash_attention2', action='store_true', default=False, help="use flash attntion 2")
+    
+    parser.add_argument('--visualize', action='store_true', default=False, help="use visualize")
 
     return parser
 
@@ -156,9 +162,12 @@ def main(args):
             transforms.RandomResizedCrop(args.input_size, scale=(0.2, 1.0), interpolation=3),  # 3 is bicubic
             transforms.RandomHorizontalFlip(),
             transforms.ToTensor(),
-            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])])
-    dataset_train = datasets.ImageFolder(os.path.join(args.data_path, 'train'), transform=transform_train)
-    print(dataset_train)
+            Lambda(lambda t: (t*2) - 1), 
+            ])
+    
+    # TODO: for test (using cifar data subset)
+    dataset_train = datasets.CIFAR10(root=args.data_path, train=True, download=True, transform=transform_train)
+    dataset_train = Subset(dataset_train, range(100))
 
     if True:  # args.distributed:
         num_tasks = misc.get_world_size()

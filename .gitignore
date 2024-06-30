@@ -6,3 +6,8 @@ demo/*
 util/__pycache__/*
 *_ignored*
 output
+visualize/*
+code_tmp/*
+cifar-10-batches-py/*
+cifar-10-python.tar.gz
+output/*
