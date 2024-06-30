@@ -22,6 +22,7 @@ from einops import rearrange
 from transformer_utils import Block, CrossAttentionBlock, PatchEmbed
 
 from util.pos_embed import get_2d_sincos_pos_embed
+from diffusion_utils import TimestepEmbedder
 
 class WeightedFeatureMaps(nn.Module):
     def __init__(self, k, embed_dim, *, norm_layer=nn.LayerNorm, decoder_depth):
@@ -104,16 +105,17 @@ class MaskedAutoencoderViT(nn.Module):
         # encoder
         self.pos_embed = nn.Parameter(torch.zeros(1, num_patches + 1, embed_dim), requires_grad=False)  # fixed sin-cos embedding
         # decoder 
-        self.decoder_pos_embed = nn.Parameter(torch.zeros(1, num_patches + 1, decoder_embed_dim), requires_grad=False)  # fixed sin-cos embedding
+        
         # --------------------------------------------------------------------------
         # NOTE : Diffusion utils
         self.diffusion_timestpes = 50  # Number of Diffusion Steps during training. Note, this is much smaller than ordinary (usually ~1000)
         beta_start = 1e-4 # Default from paper
         beta_end = 0.02  # NOTE: This is different to accomodate the much shorter DIFFUSION_TIMESTEPS (Usually ~1000). For 1000 diffusion timesteps, use 0.02.
         clip_sample = False  # Used for better sample generation
-
         self.noise_scheduler = DDPMScheduler(num_train_timesteps=self.diffusion_timestpes, beta_schedule="linear", beta_start=beta_start, beta_end=beta_end, clip_sample=clip_sample)
-        
+        self.decoder_pos_embed = nn.Parameter(torch.zeros(1, num_patches + 1, decoder_embed_dim), requires_grad=False)  # fixed sin-cos embedding
+        # timestep embedding
+        self.t_embedder = TimestepEmbedder(decoder_embed_dim)
         # --------------------------------------------------------------------------
         self.norm_pix_loss = norm_pix_loss
 
@@ -135,6 +137,8 @@ class MaskedAutoencoderViT(nn.Module):
         # timm's trunc_normal_(std=.02) is effectively normal_(std=0.02) as cutoff is too big (2.)
         torch.nn.init.normal_(self.cls_token, std=.02)
         torch.nn.init.normal_(self.mask_token, std=.02)
+        nn.init.normal_(self.t_embedder.mlp[0].weight, std=0.02)
+        nn.init.normal_(self.t_embedder.mlp[2].weight, std=0.02)
 
         # initialize nn.Linear and nn.LayerNorm
         self.apply(self._init_weights)
@@ -212,12 +216,13 @@ class MaskedAutoencoderViT(nn.Module):
         x = x + self.pos_embed[:, 1:, :]
         return x
     
-    def decoder_grid_patchify(self, x):
+    def decoder_grid_patchify(self, x, t):
         # embed patches
         x = self.decoder_patch_embed(x)
-
+        t = self.t_embedder(t)
+        c = self.decoder_pos_embed[:, 1:, :] + t
         # add pos embed w/o cls token
-        x = x + self.decoder_pos_embed[:, 1:, :]
+        x = x + c
         return x
     
     def mask_tokens_grid(self, noise_x, mask):
@@ -283,8 +288,7 @@ class MaskedAutoencoderViT(nn.Module):
         noise = rearrange(noise, '(h w) c s1 s2 -> c (h s1) (w s2)', 
                             s1=self.patch_size, s2=self.patch_size, w=self.img_size // self.patch_size, h=self.img_size // self.patch_size)
         
-        batch_repeat = self.noise_scheduler.num_train_timesteps
-        batch = sequence.expand(batch_repeat, -1, -1, -1).to(y[0].device) # batch, channel, H, W
+        batch = sequence.expand(self.diffusion_timestpes, -1, -1, -1).to(y[0].device) # batch, channel, H, W
         
         # # NOTE : add noise
         t = torch.arange(0, self.noise_scheduler.num_train_timesteps, dtype=torch.long, device=y[0].device).unsqueeze(1).expand(batch.shape[0], -1)
@@ -294,7 +298,7 @@ class MaskedAutoencoderViT(nn.Module):
         # from torchvision.transforms import Lambda
         # unnormalize = Lambda(lambda t: (t + 1) / 2)
         # noise_x = unnormalize(noise_x)
-        noise_x = self.decoder_grid_patchify(noise_x)
+        noise_x = self.decoder_grid_patchify(noise_x, t)
         x = self.mask_tokens_grid(noise_x, mask)
         
         if self.weight_fm:
