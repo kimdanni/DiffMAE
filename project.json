@@ -1,0 +1,3842 @@
+[{
+    "summary": {
+      "file_count": 19347, 
+      "experimental_strategies": [
+        {
+          "case_count": 276, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 277, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 277, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 267, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 152, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 278
+    }, 
+    "primary_site": [
+      "Connective, subcutaneous and other soft tissues", 
+      "Other and unspecified parts of tongue", 
+      "Other and unspecified parts of biliary tract", 
+      "Other and unspecified parts of mouth", 
+      "Rectum", 
+      "Uterus, NOS", 
+      "Pancreas", 
+      "Corpus uteri", 
+      "Other and ill-defined sites", 
+      "Gallbladder", 
+      "Breast", 
+      "Kidney", 
+      "Nasal cavity and middle ear", 
+      "Liver and intrahepatic bile ducts", 
+      "Rectosigmoid junction", 
+      "Stomach", 
+      "Bronchus and lung", 
+      "Colon", 
+      "Ovary", 
+      "Bones, joints and articular cartilage of other and unspecified sites", 
+      "Skin", 
+      "Small intestine", 
+      "Esophagus", 
+      "Brain"
+    ], 
+    "project_id": "HCMI-CMDC", 
+    "disease_type": [
+      "Complex Mixed and Stromal Neoplasms", 
+      "Acinar Cell Neoplasms", 
+      "Adenomas and Adenocarcinomas", 
+      "Squamous Cell Neoplasms", 
+      "Gliomas", 
+      "Fibromatous Neoplasms", 
+      "Soft Tissue Tumors and Sarcomas, NOS", 
+      "Myomatous Neoplasms", 
+      "Blood Vessel Tumors", 
+      "Osseous and Chondromatous Neoplasms", 
+      "Ductal and Lobular Neoplasms", 
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Miscellaneous Bone Tumors", 
+      "Nevi and Melanomas", 
+      "Complex Epithelial Neoplasms", 
+      "Epithelial Neoplasms, NOS"
+    ], 
+    "program": {
+      "name": "HCMI"
+    }
+  },{
+    "summary": {
+      "file_count": 61173, 
+      "experimental_strategies": [
+        {
+          "case_count": 1095, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 1072, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 1079, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 952, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 74, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 1098, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 1097, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 881, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 1062, 
+          "experimental_strategy": "Diagnostic Slide"
+        }, 
+        {
+          "case_count": 1093, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 1098
+    }, 
+    "primary_site": [
+      "Breast"
+    ], 
+    "project_id": "TCGA-BRCA", 
+    "disease_type": [
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Complex Epithelial Neoplasms", 
+      "Ductal and Lobular Neoplasms", 
+      "Squamous Cell Neoplasms", 
+      "Adenomas and Adenocarcinomas", 
+      "Basal Cell Neoplasms", 
+      "Epithelial Neoplasms, NOS", 
+      "Adnexal and Skin Appendage Neoplasms", 
+      "Fibroepithelial Neoplasms"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 3736, 
+      "experimental_strategies": [
+        {
+          "case_count": 89, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 38, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 110, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 46, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 102, 
+          "experimental_strategy": "Methylation Array"
+        }
+      ], 
+      "case_count": 191
+    }, 
+    "primary_site": [
+      "Unknown", 
+      "Hematopoietic and reticuloendothelial systems"
+    ], 
+    "project_id": "TARGET-ALL-P3", 
+    "disease_type": [
+      "Myeloid Leukemias", 
+      "Leukemias, NOS", 
+      "Not Applicable", 
+      "Lymphoid Leukemias"
+    ], 
+    "program": {
+      "name": "TARGET"
+    }
+  },{
+    "summary": {
+      "file_count": 1826, 
+      "experimental_strategies": [
+        {
+          "case_count": 82, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 69, 
+          "experimental_strategy": "Targeted Sequencing"
+        }, 
+        {
+          "case_count": 70, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 84
+    }, 
+    "primary_site": [
+      "Other and unspecified female genital organs", 
+      "Connective, subcutaneous and other soft tissues", 
+      "Bladder", 
+      "Stomach", 
+      "Other and ill-defined sites", 
+      "Skin", 
+      "Kidney", 
+      "Bronchus and lung", 
+      "Esophagus", 
+      "Ovary", 
+      "Anus and anal canal", 
+      "Other and unspecified parts of biliary tract", 
+      "Unknown", 
+      "Rectum", 
+      "Pancreas", 
+      "Other and ill-defined digestive organs", 
+      "Brain", 
+      "Uterus, NOS", 
+      "Colon", 
+      "Breast"
+    ], 
+    "project_id": "EXCEPTIONAL_RESPONDERS-ER", 
+    "disease_type": [
+      "Nevi and Melanomas", 
+      "Squamous Cell Neoplasms", 
+      "Complex Mixed and Stromal Neoplasms", 
+      "Gliomas", 
+      "Ductal and Lobular Neoplasms", 
+      "Adenomas and Adenocarcinomas", 
+      "Neoplasms, NOS", 
+      "Epithelial Neoplasms, NOS", 
+      "Myomatous Neoplasms"
+    ], 
+    "program": {
+      "name": "EXCEPTIONAL_RESPONDERS"
+    }
+  },{
+    "summary": {
+      "file_count": 896, 
+      "experimental_strategies": [
+        {
+          "case_count": 38, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 39, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 37, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 27, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 39
+    }, 
+    "primary_site": [
+      "Bronchus and lung"
+    ], 
+    "project_id": "CGCI-HTMCP-LC", 
+    "disease_type": [
+      "Squamous Cell Neoplasms", 
+      "Complex Epithelial Neoplasms", 
+      "Paragangliomas and Glomus Tumors", 
+      "Adenomas and Adenocarcinomas", 
+      "Neoplasms, NOS", 
+      "Epithelial Neoplasms, NOS"
+    ], 
+    "program": {
+      "name": "CGCI"
+    }
+  },{
+    "summary": {
+      "file_count": 9244, 
+      "experimental_strategies": [
+        {
+          "case_count": 340, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 310, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 340, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 342
+    }, 
+    "primary_site": [
+      "Other and unspecified female genital organs", 
+      "Colon", 
+      "Retroperitoneum and peritoneum", 
+      "Rectum", 
+      "Breast", 
+      "Ovary"
+    ], 
+    "project_id": "CPTAC-2", 
+    "disease_type": [
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Squamous Cell Neoplasms", 
+      "Not Reported", 
+      "Ductal and Lobular Neoplasms", 
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "CPTAC"
+    }
+  },{
+    "summary": {
+      "file_count": 5454, 
+      "experimental_strategies": [
+        {
+          "case_count": 180, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 140, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 200
+    }, 
+    "primary_site": [
+      "Breast"
+    ], 
+    "project_id": "CMI-MBC", 
+    "disease_type": [
+      "Ductal and Lobular Neoplasms"
+    ], 
+    "program": {
+      "name": "CMI"
+    }
+  },{
+    "summary": {
+      "file_count": 17584, 
+      "experimental_strategies": [
+        {
+          "case_count": 784, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 469, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 77, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 191, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 330, 
+          "experimental_strategy": "Genotyping Array"
+        }
+      ], 
+      "case_count": 1587
+    }, 
+    "primary_site": [
+      "Hematopoietic and reticuloendothelial systems"
+    ], 
+    "project_id": "TARGET-ALL-P2", 
+    "disease_type": [
+      "Lymphoid Leukemias"
+    ], 
+    "program": {
+      "name": "TARGET"
+    }
+  },{
+    "summary": {
+      "file_count": 1628, 
+      "experimental_strategies": [
+        {
+          "case_count": 158, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 80, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 176
+    }, 
+    "primary_site": [
+      "Hematopoietic and reticuloendothelial systems"
+    ], 
+    "project_id": "OHSU-CNL", 
+    "disease_type": [
+      "Chronic Myeloproliferative Disorders"
+    ], 
+    "program": {
+      "name": "OHSU"
+    }
+  },{
+    "summary": {
+      "file_count": 101, 
+      "experimental_strategies": [
+        {
+          "case_count": 12, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 10, 
+          "experimental_strategy": "WGS"
+        }
+      ], 
+      "case_count": 24
+    }, 
+    "primary_site": [
+      "Hematopoietic and reticuloendothelial systems"
+    ], 
+    "project_id": "TARGET-ALL-P1", 
+    "disease_type": [
+      "Lymphoid Leukemias"
+    ], 
+    "program": {
+      "name": "TARGET"
+    }
+  },{
+    "summary": {
+      "file_count": 27014, 
+      "experimental_strategies": [
+        {
+          "case_count": 975, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 787, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 923, 
+          "experimental_strategy": "WGS"
+        }
+      ], 
+      "case_count": 995
+    }, 
+    "primary_site": [
+      "Hematopoietic and reticuloendothelial systems"
+    ], 
+    "project_id": "MMRF-COMMPASS", 
+    "disease_type": [
+      "Plasma Cell Tumors"
+    ], 
+    "program": {
+      "name": "MMRF"
+    }
+  },{
+    "summary": {
+      "file_count": 896, 
+      "experimental_strategies": [
+        {
+          "case_count": 69, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 49, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 22, 
+          "experimental_strategy": "WGS"
+        }
+      ], 
+      "case_count": 70
+    }, 
+    "primary_site": [
+      "Pancreas"
+    ], 
+    "project_id": "ORGANOID-PANCREATIC", 
+    "disease_type": [
+      "Unknown", 
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "ORGANOID"
+    }
+  },{
+    "summary": {
+      "file_count": 5286, 
+      "experimental_strategies": [
+        {
+          "case_count": 481, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 485, 
+          "experimental_strategy": "Targeted Sequencing"
+        }, 
+        {
+          "case_count": 472, 
+          "experimental_strategy": "WXS"
+        }
+      ], 
+      "case_count": 489
+    }, 
+    "primary_site": [
+      "Lymph nodes"
+    ], 
+    "project_id": "NCICCR-DLBCL", 
+    "disease_type": [
+      "Mature B-Cell Lymphomas"
+    ], 
+    "program": {
+      "name": "NCICCR"
+    }
+  },{
+    "summary": {
+      "file_count": 14184, 
+      "experimental_strategies": [
+        {
+          "case_count": 259, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 259, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 255, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 223, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 261, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 261, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 223, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 261, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 254, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 261
+    }, 
+    "primary_site": [
+      "Meninges", 
+      "Connective, subcutaneous and other soft tissues", 
+      "Corpus uteri", 
+      "Colon", 
+      "Retroperitoneum and peritoneum", 
+      "Other and unspecified male genital organs", 
+      "Kidney", 
+      "Other and unspecified parts of tongue", 
+      "Peripheral nerves and autonomic nervous system", 
+      "Ovary", 
+      "Bones, joints and articular cartilage of limbs", 
+      "Uterus, NOS", 
+      "Stomach"
+    ], 
+    "project_id": "TCGA-SARC", 
+    "disease_type": [
+      "Synovial-like Neoplasms", 
+      "Fibromatous Neoplasms", 
+      "Soft Tissue Tumors and Sarcomas, NOS", 
+      "Lipomatous Neoplasms", 
+      "Nerve Sheath Tumors", 
+      "Myomatous Neoplasms"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 5134, 
+      "experimental_strategies": [
+        {
+          "case_count": 79, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 80, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 92, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 74, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 9, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 92, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 80, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 46, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 56, 
+          "experimental_strategy": "Diagnostic Slide"
+        }, 
+        {
+          "case_count": 92, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 92
+    }, 
+    "primary_site": [
+      "Adrenal gland"
+    ], 
+    "project_id": "TCGA-ACC", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 1093, 
+      "experimental_strategies": [
+        {
+          "case_count": 99, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 101, 
+          "experimental_strategy": "WGS"
+        }
+      ], 
+      "case_count": 101
+    }, 
+    "primary_site": [
+      "Prostate gland"
+    ], 
+    "project_id": "WCDT-MCRPC", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "WCDT"
+    }
+  },{
+    "summary": {
+      "file_count": 28417, 
+      "experimental_strategies": [
+        {
+          "case_count": 554, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 557, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 550, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 482, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 13, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 559, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 559, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 440, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 505, 
+          "experimental_strategy": "Diagnostic Slide"
+        }, 
+        {
+          "case_count": 560, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 560
+    }, 
+    "primary_site": [
+      "Corpus uteri", 
+      "Uterus, NOS"
+    ], 
+    "project_id": "TCGA-UCEC", 
+    "disease_type": [
+      "Not Reported", 
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Epithelial Neoplasms, NOS", 
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 48755, 
+      "experimental_strategies": [
+        {
+          "case_count": 1494, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 1479, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 1507, 
+          "experimental_strategy": "WGS"
+        }
+      ], 
+      "case_count": 1510
+    }, 
+    "primary_site": [
+      "Hematopoietic and reticuloendothelial systems"
+    ], 
+    "project_id": "MP2PRT-ALL", 
+    "disease_type": [
+      "Acute Lymphoblastic Leukemia", 
+      "Lymphoid Leukemias"
+    ], 
+    "program": {
+      "name": "MP2PRT"
+    }
+  },{
+    "summary": {
+      "file_count": 29352, 
+      "experimental_strategies": [
+        {
+          "case_count": 533, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 389, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 516, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 124, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 16, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 534, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 535, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 478, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 513, 
+          "experimental_strategy": "Diagnostic Slide"
+        }, 
+        {
+          "case_count": 537, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 537
+    }, 
+    "primary_site": [
+      "Kidney"
+    ], 
+    "project_id": "TCGA-KIRC", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 5856, 
+      "experimental_strategies": [
+        {
+          "case_count": 89, 
+          "experimental_strategy": "Targeted Sequencing"
+        }, 
+        {
+          "case_count": 124, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 123, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 118, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 120, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 211, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 212
+    }, 
+    "primary_site": [
+      "Cervix uteri"
+    ], 
+    "project_id": "CGCI-HTMCP-CC", 
+    "disease_type": [
+      "Squamous Cell Neoplasms", 
+      "Epithelial Neoplasms, NOS", 
+      "Adenomas and Adenocarcinomas", 
+      "Complex Epithelial Neoplasms"
+    ], 
+    "program": {
+      "name": "CGCI"
+    }
+  },{
+    "summary": {
+      "file_count": 806, 
+      "experimental_strategies": [
+        {
+          "case_count": 36, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 8, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 36
+    }, 
+    "primary_site": [
+      "Heart, mediastinum, and pleura", 
+      "Other and ill-defined sites", 
+      "Bladder", 
+      "Skin", 
+      "Breast", 
+      "Bronchus and lung", 
+      "Lymph nodes", 
+      "Other and ill-defined digestive organs", 
+      "Other and ill-defined sites within respiratory system and intrathoracic organs"
+    ], 
+    "project_id": "CMI-ASC", 
+    "disease_type": [
+      "Soft Tissue Tumors and Sarcomas, NOS"
+    ], 
+    "program": {
+      "name": "CMI"
+    }
+  },{
+    "summary": {
+      "file_count": 1712, 
+      "experimental_strategies": [
+        {
+          "case_count": 66, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 55, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 60, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 43, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 70
+    }, 
+    "primary_site": [
+      "Hematopoietic and reticuloendothelial systems"
+    ], 
+    "project_id": "CGCI-HTMCP-DLBCL", 
+    "disease_type": [
+      "Mature B-Cell Lymphomas"
+    ], 
+    "program": {
+      "name": "CGCI"
+    }
+  },{
+    "summary": {
+      "file_count": 547, 
+      "experimental_strategies": [
+        {
+          "case_count": 56, 
+          "experimental_strategy": "WXS"
+        }
+      ], 
+      "case_count": 56
+    }, 
+    "primary_site": [
+      "Hematopoietic and reticuloendothelial systems"
+    ], 
+    "project_id": "BEATAML1.0-CRENOLANIB", 
+    "disease_type": [
+      "Myeloid Leukemias"
+    ], 
+    "program": {
+      "name": "BEATAML1.0"
+    }
+  },{
+    "summary": {
+      "file_count": 1747, 
+      "experimental_strategies": [
+        {
+          "case_count": 50, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 48, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 50, 
+          "experimental_strategy": "WGS"
+        }
+      ], 
+      "case_count": 50
+    }, 
+    "primary_site": [
+      "Bronchus and lung"
+    ], 
+    "project_id": "CDDP_EAGLE-1", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "CDDP_EAGLE"
+    }
+  },{
+    "summary": {
+      "file_count": 1455, 
+      "experimental_strategies": [
+        {
+          "case_count": 87, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 87, 
+          "experimental_strategy": "WGS"
+        }
+      ], 
+      "case_count": 87
+    }, 
+    "primary_site": [
+      "Bronchus and lung"
+    ], 
+    "project_id": "APOLLO-LUAD", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "APOLLO"
+    }
+  },{
+    "summary": {
+      "file_count": 1305, 
+      "experimental_strategies": [
+        {
+          "case_count": 63, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 38, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 63
+    }, 
+    "primary_site": [
+      "Prostate gland", 
+      "Lymph nodes"
+    ], 
+    "project_id": "CMI-MPC", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "CMI"
+    }
+  },{
+    "summary": {
+      "file_count": 54096, 
+      "experimental_strategies": [
+        {
+          "case_count": 18004, 
+          "experimental_strategy": "Targeted Sequencing"
+        }
+      ], 
+      "case_count": 18004
+    }, 
+    "primary_site": [
+      "Other and unspecified female genital organs", 
+      "Bladder", 
+      "Adrenal gland", 
+      "Stomach", 
+      "Small intestine", 
+      "Other and ill-defined sites", 
+      "Eye and adnexa", 
+      "Thymus", 
+      "Skin", 
+      "Nasopharynx", 
+      "Kidney", 
+      "Ureter", 
+      "Cervix uteri", 
+      "Peripheral nerves and autonomic nervous system", 
+      "Bronchus and lung", 
+      "Penis", 
+      "Esophagus", 
+      "Ovary", 
+      "Spinal cord, cranial nerves, and other parts of central nervous system", 
+      "Anus and anal canal", 
+      "Other and unspecified urinary organs", 
+      "Thyroid gland", 
+      "Other and unspecified parts of biliary tract", 
+      "Unknown", 
+      "Testis", 
+      "Liver and intrahepatic bile ducts", 
+      "Rectum", 
+      "Retroperitoneum and peritoneum", 
+      "Other endocrine glands and related structures", 
+      "Pancreas", 
+      "Trachea", 
+      "Heart, mediastinum, and pleura", 
+      "Other and ill-defined digestive organs", 
+      "Uterus, NOS", 
+      "Gallbladder", 
+      "Vagina", 
+      "Vulva", 
+      "Colon", 
+      "Not Reported", 
+      "Breast", 
+      "Other and unspecified major salivary glands", 
+      "Prostate gland"
+    ], 
+    "project_id": "FM-AD", 
+    "disease_type": [
+      "Ductal and Lobular Neoplasms", 
+      "Thymic Epithelial Neoplasms", 
+      "Germ Cell Neoplasms", 
+      "Nevi and Melanomas", 
+      "Acinar Cell Neoplasms", 
+      "Meningiomas", 
+      "Gliomas", 
+      "Neuroepitheliomatous Neoplasms", 
+      "Basal Cell Neoplasms", 
+      "Transitional Cell Papillomas and Carcinomas", 
+      "Adnexal and Skin Appendage Neoplasms", 
+      "Epithelial Neoplasms, NOS", 
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Squamous Cell Neoplasms", 
+      "Complex Mixed and Stromal Neoplasms", 
+      "Adenomas and Adenocarcinomas", 
+      "Mesothelial Neoplasms", 
+      "Specialized Gonadal Neoplasms", 
+      "Miscellaneous Tumors", 
+      "Mucoepidermoid Neoplasms", 
+      "Not Reported", 
+      "Complex Epithelial Neoplasms", 
+      "Paragangliomas and Glomus Tumors"
+    ], 
+    "program": {
+      "name": "FM"
+    }
+  },{
+    "summary": {
+      "file_count": 891, 
+      "experimental_strategies": [
+        {
+          "case_count": 34, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 35, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 36
+    }, 
+    "primary_site": [
+      "Small intestine", 
+      "Thyroid gland", 
+      "Other and unspecified female genital organs", 
+      "Other and unspecified parts of biliary tract", 
+      "Corpus uteri", 
+      "Uterus, NOS", 
+      "Liver and intrahepatic bile ducts", 
+      "Other endocrine glands and related structures", 
+      "Breast", 
+      "Esophagus", 
+      "Brain", 
+      "Other and unspecified major salivary glands", 
+      "Prostate gland", 
+      "Bones, joints and articular cartilage of other and unspecified sites", 
+      "Stomach"
+    ], 
+    "project_id": "MATCH-Z1D", 
+    "disease_type": [
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Squamous Cell Neoplasms", 
+      "Complex Mixed and Stromal Neoplasms", 
+      "Gliomas", 
+      "Ductal and Lobular Neoplasms", 
+      "Adenomas and Adenocarcinomas", 
+      "Neoplasms, NOS", 
+      "Myomatous Neoplasms"
+    ], 
+    "program": {
+      "name": "MATCH"
+    }
+  },{
+    "summary": {
+      "file_count": 783, 
+      "experimental_strategies": [
+        {
+          "case_count": 30, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 29, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 31
+    }, 
+    "primary_site": [
+      "Other and unspecified female genital organs", 
+      "Corpus uteri", 
+      "Connective, subcutaneous and other soft tissues", 
+      "Skin", 
+      "Retroperitoneum and peritoneum", 
+      "Renal pelvis", 
+      "Pancreas", 
+      "Breast", 
+      "Cervix uteri", 
+      "Bronchus and lung"
+    ], 
+    "project_id": "MATCH-Y", 
+    "disease_type": [
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Fibromatous Neoplasms", 
+      "Squamous Cell Neoplasms", 
+      "Ductal and Lobular Neoplasms", 
+      "Adenomas and Adenocarcinomas", 
+      "Neoplasms, NOS", 
+      "Transitional Cell Papillomas and Carcinomas", 
+      "Epithelial Neoplasms, NOS", 
+      "Myomatous Neoplasms"
+    ], 
+    "program": {
+      "name": "MATCH"
+    }
+  },{
+    "summary": {
+      "file_count": 510, 
+      "experimental_strategies": [
+        {
+          "case_count": 21, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 18, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 21
+    }, 
+    "primary_site": [
+      "Small intestine", 
+      "Base of tongue", 
+      "Oropharynx", 
+      "Corpus uteri", 
+      "Prostate gland", 
+      "Unknown", 
+      "Kidney", 
+      "Cervix uteri", 
+      "Breast", 
+      "Bronchus and lung", 
+      "Brain"
+    ], 
+    "project_id": "MATCH-N", 
+    "disease_type": [
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Squamous Cell Neoplasms", 
+      "Complex Mixed and Stromal Neoplasms", 
+      "Gliomas", 
+      "Ductal and Lobular Neoplasms", 
+      "Adenomas and Adenocarcinomas", 
+      "Neoplasms, NOS", 
+      "Epithelial Neoplasms, NOS", 
+      "Myomatous Neoplasms"
+    ], 
+    "program": {
+      "name": "MATCH"
+    }
+  },{
+    "summary": {
+      "file_count": 852, 
+      "experimental_strategies": [
+        {
+          "case_count": 34, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 32, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 35
+    }, 
+    "primary_site": [
+      "Other and unspecified female genital organs", 
+      "Other and unspecified parts of biliary tract", 
+      "Corpus uteri", 
+      "Rectosigmoid junction", 
+      "Colon", 
+      "Ovary", 
+      "Other and unspecified male genital organs", 
+      "Rectum", 
+      "Cervix uteri", 
+      "Bronchus and lung", 
+      "Parotid gland", 
+      "Other and ill-defined digestive organs", 
+      "Gallbladder"
+    ], 
+    "project_id": "MATCH-Q", 
+    "disease_type": [
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Squamous Cell Neoplasms", 
+      "Adenomas and Adenocarcinomas", 
+      "Neoplasms, NOS", 
+      "Epithelial Neoplasms, NOS"
+    ], 
+    "program": {
+      "name": "MATCH"
+    }
+  },{
+    "summary": {
+      "file_count": 1571, 
+      "experimental_strategies": [
+        {
+          "case_count": 52, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 52, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 52, 
+          "experimental_strategy": "WGS"
+        }
+      ], 
+      "case_count": 52
+    }, 
+    "primary_site": [
+      "Kidney"
+    ], 
+    "project_id": "MP2PRT-WT", 
+    "disease_type": [
+      "Neoplasms, NOS"
+    ], 
+    "program": {
+      "name": "MP2PRT"
+    }
+  },{
+    "summary": {
+      "file_count": 8656, 
+      "experimental_strategies": [
+        {
+          "case_count": 151, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 188, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 50, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 150, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 200, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 194, 
+          "experimental_strategy": "Methylation Array"
+        }
+      ], 
+      "case_count": 200
+    }, 
+    "primary_site": [
+      "Hematopoietic and reticuloendothelial systems"
+    ], 
+    "project_id": "TCGA-LAML", 
+    "disease_type": [
+      "Myeloid Leukemias"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 42, 
+      "experimental_strategies": [
+        {
+          "case_count": 7, 
+          "experimental_strategy": "Targeted Sequencing"
+        }
+      ], 
+      "case_count": 7
+    }, 
+    "primary_site": [
+      "Bronchus and lung"
+    ], 
+    "project_id": "VAREPOP-APOLLO", 
+    "disease_type": [
+      "Squamous Cell Neoplasms", 
+      "Epithelial Neoplasms, NOS"
+    ], 
+    "program": {
+      "name": "VAREPOP"
+    }
+  },{
+    "summary": {
+      "file_count": 24540, 
+      "experimental_strategies": [
+        {
+          "case_count": 448, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 469, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 223, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 470, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 13, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 470, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 470, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 350, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 469, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 433, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 470
+    }, 
+    "primary_site": [
+      "Skin"
+    ], 
+    "project_id": "TCGA-SKCM", 
+    "disease_type": [
+      "Nevi and Melanomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 339, 
+      "experimental_strategies": [
+        {
+          "case_count": 339, 
+          "experimental_strategy": "WGS"
+        }
+      ], 
+      "case_count": 339
+    }, 
+    "primary_site": [], 
+    "project_id": "TRIO-CRU", 
+    "disease_type": [
+      "Not Applicable"
+    ], 
+    "program": {
+      "name": "TRIO"
+    }
+  },{
+    "summary": {
+      "file_count": 10894, 
+      "experimental_strategies": [
+        {
+          "case_count": 178, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 185, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 178, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 173, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 185, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 184, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 120, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 185, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 183, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 185
+    }, 
+    "primary_site": [
+      "Pancreas"
+    ], 
+    "project_id": "TCGA-PAAD", 
+    "disease_type": [
+      "Ductal and Lobular Neoplasms", 
+      "Epithelial Neoplasms, NOS", 
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 10290, 
+      "experimental_strategies": [
+        {
+          "case_count": 150, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 150, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 150, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 253, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 9, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 150, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 150, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 118, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 150, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 149, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 263
+    }, 
+    "primary_site": [
+      "Testis"
+    ], 
+    "project_id": "TCGA-TGCT", 
+    "disease_type": [
+      "Germ Cell Neoplasms"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 16418, 
+      "experimental_strategies": [
+        {
+          "case_count": 304, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 305, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 307, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 271, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 2, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 304, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 307, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 172, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 306, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 269, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 307
+    }, 
+    "primary_site": [
+      "Cervix uteri"
+    ], 
+    "project_id": "TCGA-CESC", 
+    "disease_type": [
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Squamous Cell Neoplasms", 
+      "Complex Epithelial Neoplasms", 
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 10234, 
+      "experimental_strategies": [
+        {
+          "case_count": 184, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 184, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 184, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 118, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 18, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 185, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 185, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 126, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 172, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 156, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 185
+    }, 
+    "primary_site": [
+      "Esophagus", 
+      "Stomach"
+    ], 
+    "project_id": "TCGA-ESCA", 
+    "disease_type": [
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Squamous Cell Neoplasms", 
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 28245, 
+      "experimental_strategies": [
+        {
+          "case_count": 477, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 502, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 506, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 505, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 14, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 505, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 507, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 377, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 506, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 506, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 507
+    }, 
+    "primary_site": [
+      "Thyroid gland"
+    ], 
+    "project_id": "TCGA-THCA", 
+    "disease_type": [
+      "Epithelial Neoplasms, NOS", 
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 20820, 
+      "experimental_strategies": [
+        {
+          "case_count": 371, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 373, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 376, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 324, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 17, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 377, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 377, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 184, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 377, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 365, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 377
+    }, 
+    "primary_site": [
+      "Liver and intrahepatic bile ducts"
+    ], 
+    "project_id": "TCGA-LIHC", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 27793, 
+      "experimental_strategies": [
+        {
+          "case_count": 414, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 494, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 497, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 498, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 26, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 498, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 498, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 352, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 403, 
+          "experimental_strategy": "Diagnostic Slide"
+        }, 
+        {
+          "case_count": 490, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 500
+    }, 
+    "primary_site": [
+      "Prostate gland"
+    ], 
+    "project_id": "TCGA-PRAD", 
+    "disease_type": [
+      "Ductal and Lobular Neoplasms", 
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 8887, 
+      "experimental_strategies": [
+        {
+          "case_count": 168, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 161, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 167, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 143, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 167, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 165, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 131, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 171, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 164, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 172
+    }, 
+    "primary_site": [
+      "Connective, subcutaneous and other soft tissues", 
+      "Unknown", 
+      "Rectosigmoid junction", 
+      "Rectum", 
+      "Colon"
+    ], 
+    "project_id": "TCGA-READ", 
+    "disease_type": [
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 1419, 
+      "experimental_strategies": [
+        {
+          "case_count": 58, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 54, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 60
+    }, 
+    "primary_site": [
+      "Retroperitoneum and peritoneum", 
+      "Kidney", 
+      "Liver and intrahepatic bile ducts", 
+      "Corpus uteri", 
+      "Rectosigmoid junction", 
+      "Vagina", 
+      "Accessory sinuses", 
+      "Other and unspecified female genital organs", 
+      "Oropharynx", 
+      "Other and unspecified parts of mouth", 
+      "Connective, subcutaneous and other soft tissues", 
+      "Colon", 
+      "Other and unspecified major salivary glands", 
+      "Unknown", 
+      "Cervix uteri", 
+      "Skin", 
+      "Anus and anal canal", 
+      "Tonsil", 
+      "Base of tongue", 
+      "Nasopharynx", 
+      "Rectum", 
+      "Esophagus", 
+      "Bronchus and lung", 
+      "Prostate gland", 
+      "Brain", 
+      "Ovary"
+    ], 
+    "project_id": "MATCH-I", 
+    "disease_type": [
+      "Gliomas", 
+      "Adenomas and Adenocarcinomas", 
+      "Nevi and Melanomas", 
+      "Myomatous Neoplasms", 
+      "Osseous and Chondromatous Neoplasms", 
+      "Neoplasms, NOS", 
+      "Soft Tissue Tumors and Sarcomas, NOS", 
+      "Squamous Cell Neoplasms", 
+      "Epithelial Neoplasms, NOS"
+    ], 
+    "program": {
+      "name": "MATCH"
+    }
+  },{
+    "summary": {
+      "file_count": 1091, 
+      "experimental_strategies": [
+        {
+          "case_count": 44, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 43, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 45
+    }, 
+    "primary_site": [
+      "Breast", 
+      "Corpus uteri", 
+      "Rectum", 
+      "Other and unspecified major salivary glands", 
+      "Bronchus and lung", 
+      "Prostate gland", 
+      "Other and unspecified urinary organs", 
+      "Liver and intrahepatic bile ducts", 
+      "Other and unspecified female genital organs", 
+      "Renal pelvis", 
+      "Anus and anal canal", 
+      "Parotid gland", 
+      "Cervix uteri", 
+      "Brain", 
+      "Bladder", 
+      "Pancreas", 
+      "Thyroid gland", 
+      "Gallbladder"
+    ], 
+    "project_id": "MATCH-W", 
+    "disease_type": [
+      "Gliomas", 
+      "Transitional Cell Papillomas and Carcinomas", 
+      "Ductal and Lobular Neoplasms", 
+      "Adenomas and Adenocarcinomas", 
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Neoplasms, NOS", 
+      "Squamous Cell Neoplasms", 
+      "Epithelial Neoplasms, NOS"
+    ], 
+    "program": {
+      "name": "MATCH"
+    }
+  },{
+    "summary": {
+      "file_count": 810, 
+      "experimental_strategies": [
+        {
+          "case_count": 32, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 28, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 33
+    }, 
+    "primary_site": [
+      "Other and unspecified parts of biliary tract", 
+      "Breast", 
+      "Colon", 
+      "Rectosigmoid junction", 
+      "Rectum", 
+      "Cervix uteri", 
+      "Prostate gland", 
+      "Unknown", 
+      "Small intestine", 
+      "Other and unspecified female genital organs", 
+      "Renal pelvis", 
+      "Parotid gland", 
+      "Liver and intrahepatic bile ducts", 
+      "Skin", 
+      "Bladder", 
+      "Ovary", 
+      "Gallbladder"
+    ], 
+    "project_id": "MATCH-B", 
+    "disease_type": [
+      "Transitional Cell Papillomas and Carcinomas", 
+      "Ductal and Lobular Neoplasms", 
+      "Adenomas and Adenocarcinomas", 
+      "Neoplasms, NOS", 
+      "Nerve Sheath Tumors", 
+      "Epithelial Neoplasms, NOS"
+    ], 
+    "program": {
+      "name": "MATCH"
+    }
+  },{
+    "summary": {
+      "file_count": 509, 
+      "experimental_strategies": [
+        {
+          "case_count": 21, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 19, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 21
+    }, 
+    "primary_site": [
+      "Colon", 
+      "Ovary", 
+      "Brain", 
+      "Bronchus and lung", 
+      "Unknown", 
+      "Other and unspecified female genital organs", 
+      "Other and ill-defined digestive organs", 
+      "Liver and intrahepatic bile ducts", 
+      "Pancreas", 
+      "Anus and anal canal", 
+      "Bones, joints and articular cartilage of other and unspecified sites"
+    ], 
+    "project_id": "MATCH-H", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas", 
+      "Gliomas", 
+      "Epithelial Neoplasms, NOS", 
+      "Neoplasms, NOS"
+    ], 
+    "program": {
+      "name": "MATCH"
+    }
+  },{
+    "summary": {
+      "file_count": 28473, 
+      "experimental_strategies": [
+        {
+          "case_count": 457, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 489, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 422, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 363, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 597, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 602, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 422, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 106, 
+          "experimental_strategy": "Diagnostic Slide"
+        }, 
+        {
+          "case_count": 589, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 608
+    }, 
+    "primary_site": [
+      "Ovary"
+    ], 
+    "project_id": "TCGA-OV", 
+    "disease_type": [
+      "Not Reported", 
+      "Cystic, Mucinous and Serous Neoplasms"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 4549, 
+      "experimental_strategies": [
+        {
+          "case_count": 80, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 75, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 80, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 80, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 80, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 80, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 12, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 80, 
+          "experimental_strategy": "Diagnostic Slide"
+        }, 
+        {
+          "case_count": 70, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 80
+    }, 
+    "primary_site": [
+      "Eye and adnexa"
+    ], 
+    "project_id": "TCGA-UVM", 
+    "disease_type": [
+      "Nevi and Melanomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 1090, 
+      "experimental_strategies": [
+        {
+          "case_count": 45, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 42, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 45
+    }, 
+    "primary_site": [
+      "Colon", 
+      "Corpus uteri", 
+      "Rectosigmoid junction", 
+      "Rectum", 
+      "Heart, mediastinum, and pleura", 
+      "Trachea", 
+      "Unknown", 
+      "Liver and intrahepatic bile ducts", 
+      "Other and ill-defined digestive organs", 
+      "Bladder", 
+      "Thyroid gland", 
+      "Ovary", 
+      "Connective, subcutaneous and other soft tissues", 
+      "Bones, joints and articular cartilage of other and unspecified sites"
+    ], 
+    "project_id": "MATCH-Z1A", 
+    "disease_type": [
+      "Mesothelial Neoplasms", 
+      "Transitional Cell Papillomas and Carcinomas", 
+      "Adenomas and Adenocarcinomas", 
+      "Neoplasms, NOS", 
+      "Squamous Cell Neoplasms", 
+      "Epithelial Neoplasms, NOS"
+    ], 
+    "program": {
+      "name": "MATCH"
+    }
+  },{
+    "summary": {
+      "file_count": 545, 
+      "experimental_strategies": [
+        {
+          "case_count": 22, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 23, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 23
+    }, 
+    "primary_site": [
+      "Other and unspecified parts of biliary tract", 
+      "Heart, mediastinum, and pleura", 
+      "Brain", 
+      "Bronchus and lung", 
+      "Kidney", 
+      "Liver and intrahepatic bile ducts", 
+      "Other and unspecified female genital organs", 
+      "Cervix uteri", 
+      "Meninges", 
+      "Ovary", 
+      "Connective, subcutaneous and other soft tissues"
+    ], 
+    "project_id": "MATCH-U", 
+    "disease_type": [
+      "Mesothelial Neoplasms", 
+      "Adenomas and Adenocarcinomas", 
+      "Fibromatous Neoplasms", 
+      "Neoplasms, NOS", 
+      "Nerve Sheath Tumors", 
+      "Squamous Cell Neoplasms", 
+      "Epithelial Neoplasms, NOS"
+    ], 
+    "program": {
+      "name": "MATCH"
+    }
+  },{
+    "summary": {
+      "file_count": 16746, 
+      "experimental_strategies": [
+        {
+          "case_count": 534, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 264, 
+          "experimental_strategy": "Targeted Sequencing"
+        }, 
+        {
+          "case_count": 653, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 826
+    }, 
+    "primary_site": [
+      "Hematopoietic and reticuloendothelial systems"
+    ], 
+    "project_id": "BEATAML1.0-COHORT", 
+    "disease_type": [
+      "Myeloid Leukemias", 
+      "Chronic Myeloproliferative Disorders", 
+      "Plasma Cell Tumors", 
+      "Unknown", 
+      "Myelodysplastic Syndromes", 
+      "Leukemias, NOS"
+    ], 
+    "program": {
+      "name": "BEATAML1.0"
+    }
+  },{
+    "summary": {
+      "file_count": 23394, 
+      "experimental_strategies": [
+        {
+          "case_count": 406, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 409, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 411, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 412, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 10, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 412, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 412, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 343, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 412, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 386, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 412
+    }, 
+    "primary_site": [
+      "Bladder"
+    ], 
+    "project_id": "TCGA-BLCA", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas", 
+      "Squamous Cell Neoplasms", 
+      "Transitional Cell Papillomas and Carcinomas", 
+      "Epithelial Neoplasms, NOS"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 10654, 
+      "experimental_strategies": [
+        {
+          "case_count": 224, 
+          "experimental_strategy": "Targeted Sequencing"
+        }, 
+        {
+          "case_count": 278, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 252, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 283, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 292, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 324
+    }, 
+    "primary_site": [
+      "Hematopoietic and reticuloendothelial systems"
+    ], 
+    "project_id": "CGCI-BLGSP", 
+    "disease_type": [
+      "Mature B-Cell Lymphomas"
+    ], 
+    "program": {
+      "name": "CGCI"
+    }
+  },{
+    "summary": {
+      "file_count": 553, 
+      "experimental_strategies": [
+        {
+          "case_count": 44, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 44, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 45, 
+          "experimental_strategy": "Targeted Sequencing"
+        }
+      ], 
+      "case_count": 45
+    }, 
+    "primary_site": [
+      "Lymph nodes", 
+      "Unknown"
+    ], 
+    "project_id": "CTSP-DLBCL1", 
+    "disease_type": [
+      "Mature B-Cell Lymphomas"
+    ], 
+    "program": {
+      "name": "CTSP"
+    }
+  },{
+    "summary": {
+      "file_count": 980, 
+      "experimental_strategies": [
+        {
+          "case_count": 40, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 37, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 41
+    }, 
+    "primary_site": [
+      "Brain", 
+      "Small intestine", 
+      "Breast", 
+      "Connective, subcutaneous and other soft tissues", 
+      "Bronchus and lung", 
+      "Parotid gland", 
+      "Liver and intrahepatic bile ducts", 
+      "Rectum", 
+      "Ovary", 
+      "Skin", 
+      "Peripheral nerves and autonomic nervous system", 
+      "Other and ill-defined sites in lip, oral cavity and pharynx", 
+      "Stomach", 
+      "Unknown", 
+      "Corpus uteri", 
+      "Colon", 
+      "Gallbladder", 
+      "Other and unspecified female genital organs"
+    ], 
+    "project_id": "MATCH-S1", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas", 
+      "Squamous Cell Neoplasms", 
+      "Myomatous Neoplasms", 
+      "Epithelial Neoplasms, NOS", 
+      "Complex Mixed and Stromal Neoplasms", 
+      "Ductal and Lobular Neoplasms", 
+      "Soft Tissue Tumors and Sarcomas, NOS", 
+      "Nerve Sheath Tumors", 
+      "Gliomas", 
+      "Neoplasms, NOS"
+    ], 
+    "program": {
+      "name": "MATCH"
+    }
+  },{
+    "summary": {
+      "file_count": 700, 
+      "experimental_strategies": [
+        {
+          "case_count": 28, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 24, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 28
+    }, 
+    "primary_site": [
+      "Breast", 
+      "Bronchus and lung", 
+      "Rectum", 
+      "Skin", 
+      "Prostate gland", 
+      "Renal pelvis", 
+      "Unknown", 
+      "Rectosigmoid junction", 
+      "Colon", 
+      "Corpus uteri", 
+      "Other and unspecified female genital organs", 
+      "Vulva"
+    ], 
+    "project_id": "MATCH-R", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas", 
+      "Osseous and Chondromatous Neoplasms", 
+      "Nevi and Melanomas", 
+      "Squamous Cell Neoplasms", 
+      "Mature T- and NK-Cell Lymphomas", 
+      "Epithelial Neoplasms, NOS", 
+      "Ductal and Lobular Neoplasms", 
+      "Neoplasms, NOS", 
+      "Mature B-Cell Lymphomas"
+    ], 
+    "program": {
+      "name": "MATCH"
+    }
+  },{
+    "summary": {
+      "file_count": 660, 
+      "experimental_strategies": [
+        {
+          "case_count": 24, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 26, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 26
+    }, 
+    "primary_site": [
+      "Pancreas", 
+      "Breast", 
+      "Bronchus and lung", 
+      "Parotid gland", 
+      "Ovary", 
+      "Rectum", 
+      "Anus and anal canal", 
+      "Unknown", 
+      "Rectosigmoid junction", 
+      "Other and ill-defined sites in lip, oral cavity and pharynx", 
+      "Gallbladder", 
+      "Other and unspecified female genital organs"
+    ], 
+    "project_id": "MATCH-Z1I", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas", 
+      "Nevi and Melanomas", 
+      "Squamous Cell Neoplasms", 
+      "Epithelial Neoplasms, NOS", 
+      "Ductal and Lobular Neoplasms", 
+      "Neoplasms, NOS"
+    ], 
+    "program": {
+      "name": "MATCH"
+    }
+  },{
+    "summary": {
+      "file_count": 69734, 
+      "experimental_strategies": [
+        {
+          "case_count": 1294, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 72, 
+          "experimental_strategy": "Targeted Sequencing"
+        }, 
+        {
+          "case_count": 1311, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 1277, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 1286, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 30, 
+          "experimental_strategy": "scRNA-Seq"
+        }, 
+        {
+          "case_count": 1274, 
+          "experimental_strategy": "Methylation Array"
+        }
+      ], 
+      "case_count": 1314
+    }, 
+    "primary_site": [
+      "Bronchus and lung", 
+      "Kidney", 
+      "Brain", 
+      "Pancreas", 
+      "Uterus, NOS", 
+      "Other and ill-defined sites"
+    ], 
+    "project_id": "CPTAC-3", 
+    "disease_type": [
+      "Ductal and Lobular Neoplasms", 
+      "Squamous Cell Neoplasms", 
+      "Not Applicable", 
+      "Gliomas", 
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "CPTAC"
+    }
+  },{
+    "summary": {
+      "file_count": 2738, 
+      "experimental_strategies": [
+        {
+          "case_count": 36, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 51, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 36, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 49, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 5, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 36, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 36, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 30, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 39, 
+          "experimental_strategy": "Diagnostic Slide"
+        }, 
+        {
+          "case_count": 51, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 51
+    }, 
+    "primary_site": [
+      "Gallbladder", 
+      "Liver and intrahepatic bile ducts", 
+      "Other and unspecified parts of biliary tract"
+    ], 
+    "project_id": "TCGA-CHOL", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 23479, 
+      "experimental_strategies": [
+        {
+          "case_count": 401, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 168, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 347, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 13, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 9, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 599, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 423, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 237, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 389, 
+          "experimental_strategy": "Diagnostic Slide"
+        }, 
+        {
+          "case_count": 606, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 617
+    }, 
+    "primary_site": [
+      "Brain"
+    ], 
+    "project_id": "TCGA-GBM", 
+    "disease_type": [
+      "Not Reported", 
+      "Gliomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 61, 
+      "experimental_strategies": [
+        {
+          "case_count": 3, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 3, 
+          "experimental_strategy": "RNA-Seq"
+        }
+      ], 
+      "case_count": 3
+    }, 
+    "primary_site": [
+      "Skin", 
+      "Unknown"
+    ], 
+    "project_id": "MATCH-S2", 
+    "disease_type": [
+      "Nevi and Melanomas"
+    ], 
+    "program": {
+      "name": "MATCH"
+    }
+  },{
+    "summary": {
+      "file_count": 3323, 
+      "experimental_strategies": [
+        {
+          "case_count": 57, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 57, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 57, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 50, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 57, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 57, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 48, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 57, 
+          "experimental_strategy": "Diagnostic Slide"
+        }, 
+        {
+          "case_count": 57, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 57
+    }, 
+    "primary_site": [
+      "Uterus, NOS"
+    ], 
+    "project_id": "TCGA-UCS", 
+    "disease_type": [
+      "Complex Mixed and Stromal Neoplasms"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 10457, 
+      "experimental_strategies": [
+        {
+          "case_count": 179, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 179, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 179, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 165, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 9, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 179, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 179, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 80, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 179, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 176, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 179
+    }, 
+    "primary_site": [
+      "Connective, subcutaneous and other soft tissues", 
+      "Heart, mediastinum, and pleura", 
+      "Retroperitoneum and peritoneum", 
+      "Other endocrine glands and related structures", 
+      "Spinal cord, cranial nerves, and other parts of central nervous system", 
+      "Adrenal gland", 
+      "Other and ill-defined sites"
+    ], 
+    "project_id": "TCGA-PCPG", 
+    "disease_type": [
+      "Paragangliomas and Glomus Tumors"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 4874, 
+      "experimental_strategies": [
+        {
+          "case_count": 87, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 83, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 87, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 73, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 7, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 87, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 87, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 62, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 87, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 75, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 87
+    }, 
+    "primary_site": [
+      "Bronchus and lung", 
+      "Heart, mediastinum, and pleura"
+    ], 
+    "project_id": "TCGA-MESO", 
+    "disease_type": [
+      "Mesothelial Neoplasms"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 185, 
+      "experimental_strategies": [
+        {
+          "case_count": 13, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 13, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 11, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 11, 
+          "experimental_strategy": "Methylation Array"
+        }
+      ], 
+      "case_count": 13
+    }, 
+    "primary_site": [
+      "Kidney"
+    ], 
+    "project_id": "TARGET-CCSK", 
+    "disease_type": [
+      "Complex Mixed and Stromal Neoplasms"
+    ], 
+    "program": {
+      "name": "TARGET"
+    }
+  },{
+    "summary": {
+      "file_count": 6415, 
+      "experimental_strategies": [
+        {
+          "case_count": 127, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 81, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 125, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 45, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 650, 
+          "experimental_strategy": "Targeted Sequencing"
+        }, 
+        {
+          "case_count": 126, 
+          "experimental_strategy": "Methylation Array"
+        }
+      ], 
+      "case_count": 652
+    }, 
+    "primary_site": [
+      "Kidney"
+    ], 
+    "project_id": "TARGET-WT", 
+    "disease_type": [
+      "Complex Mixed and Stromal Neoplasms"
+    ], 
+    "program": {
+      "name": "TARGET"
+    }
+  },{
+    "summary": {
+      "file_count": 1036, 
+      "experimental_strategies": [
+        {
+          "case_count": 63, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 66, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 69, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 68, 
+          "experimental_strategy": "Methylation Array"
+        }
+      ], 
+      "case_count": 69
+    }, 
+    "primary_site": [
+      "Liver and intrahepatic bile ducts", 
+      "Kidney", 
+      "Lip"
+    ], 
+    "project_id": "TARGET-RT", 
+    "disease_type": [
+      "Complex Mixed and Stromal Neoplasms"
+    ], 
+    "program": {
+      "name": "TARGET"
+    }
+  },{
+    "summary": {
+      "file_count": 2726, 
+      "experimental_strategies": [
+        {
+          "case_count": 48, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 48, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 47, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 42, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 50, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 48, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 33, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 46, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 44, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 58
+    }, 
+    "primary_site": [
+      "Breast", 
+      "Other and unspecified major salivary glands", 
+      "Thyroid gland", 
+      "Lymph nodes", 
+      "Retroperitoneum and peritoneum", 
+      "Heart, mediastinum, and pleura", 
+      "Testis", 
+      "Small intestine", 
+      "Connective, subcutaneous and other soft tissues", 
+      "Hematopoietic and reticuloendothelial systems", 
+      "Brain", 
+      "Colon", 
+      "Stomach", 
+      "Bones, joints and articular cartilage of other and unspecified sites"
+    ], 
+    "project_id": "TCGA-DLBC", 
+    "disease_type": [
+      "Not Reported", 
+      "Mature B-Cell Lymphomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 4114, 
+      "experimental_strategies": [
+        {
+          "case_count": 113, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 58, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 88, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 165, 
+          "experimental_strategy": "Targeted Sequencing"
+        }, 
+        {
+          "case_count": 88, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 86, 
+          "experimental_strategy": "Methylation Array"
+        }
+      ], 
+      "case_count": 383
+    }, 
+    "primary_site": [
+      "Bones, joints and articular cartilage of limbs", 
+      "Not Reported", 
+      "Bones, joints and articular cartilage of other and unspecified sites"
+    ], 
+    "project_id": "TARGET-OS", 
+    "disease_type": [
+      "Osseous and Chondromatous Neoplasms"
+    ], 
+    "program": {
+      "name": "TARGET"
+    }
+  },{
+    "summary": {
+      "file_count": 25726, 
+      "experimental_strategies": [
+        {
+          "case_count": 444, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 458, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 443, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 371, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 38, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 460, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 457, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 360, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 460, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 451, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 461
+    }, 
+    "primary_site": [
+      "Colon", 
+      "Rectosigmoid junction"
+    ], 
+    "project_id": "TCGA-COAD", 
+    "disease_type": [
+      "Complex Epithelial Neoplasms", 
+      "Epithelial Neoplasms, NOS", 
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 14954, 
+      "experimental_strategies": [
+        {
+          "case_count": 395, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 438, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 437, 
+          "experimental_strategy": "miRNA-Seq"
+        }
+      ], 
+      "case_count": 449
+    }, 
+    "primary_site": [
+      "Thyroid gland"
+    ], 
+    "project_id": "REBC-THYR", 
+    "disease_type": [
+      "Epithelial Neoplasms, NOS", 
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "REBC"
+    }
+  },{
+    "summary": {
+      "file_count": 25210, 
+      "experimental_strategies": [
+        {
+          "case_count": 443, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 415, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 436, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 436, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 21, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 443, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 443, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 357, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 416, 
+          "experimental_strategy": "Diagnostic Slide"
+        }, 
+        {
+          "case_count": 432, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 443
+    }, 
+    "primary_site": [
+      "Stomach"
+    ], 
+    "project_id": "TCGA-STAD", 
+    "disease_type": [
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 16431, 
+      "experimental_strategies": [
+        {
+          "case_count": 291, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 290, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 290, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 216, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 34, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 290, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 291, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 215, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 287, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 276, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 291
+    }, 
+    "primary_site": [
+      "Kidney"
+    ], 
+    "project_id": "TCGA-KIRP", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 7098, 
+      "experimental_strategies": [
+        {
+          "case_count": 124, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 123, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 120, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 111, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 124, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 124, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 90, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 121, 
+          "experimental_strategy": "Diagnostic Slide"
+        }, 
+        {
+          "case_count": 124, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 124
+    }, 
+    "primary_site": [
+      "Thymus", 
+      "Heart, mediastinum, and pleura"
+    ], 
+    "project_id": "TCGA-THYM", 
+    "disease_type": [
+      "Thymic Epithelial Neoplasms"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 4759, 
+      "experimental_strategies": [
+        {
+          "case_count": 66, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 86, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 66, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 66, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 66, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 66, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 63, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 109, 
+          "experimental_strategy": "Diagnostic Slide"
+        }, 
+        {
+          "case_count": 90, 
+          "experimental_strategy": "Tissue Slide"
+        }
+      ], 
+      "case_count": 113
+    }, 
+    "primary_site": [
+      "Kidney"
+    ], 
+    "project_id": "TCGA-KICH", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 28573, 
+      "experimental_strategies": [
+        {
+          "case_count": 516, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 516, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 512, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 461, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 13, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 515, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 516, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 430, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 515, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 491, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 516
+    }, 
+    "primary_site": [
+      "Brain"
+    ], 
+    "project_id": "TCGA-LGG", 
+    "disease_type": [
+      "Gliomas"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 50920, 
+      "experimental_strategies": [
+        {
+          "case_count": 2281, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 1836, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 227, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 22, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 803, 
+          "experimental_strategy": "Targeted Sequencing"
+        }, 
+        {
+          "case_count": 190, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 319, 
+          "experimental_strategy": "Methylation Array"
+        }
+      ], 
+      "case_count": 2492
+    }, 
+    "primary_site": [
+      "Unknown", 
+      "Hematopoietic and reticuloendothelial systems"
+    ], 
+    "project_id": "TARGET-AML", 
+    "disease_type": [
+      "Not Applicable", 
+      "Myeloid Leukemias"
+    ], 
+    "program": {
+      "name": "TARGET"
+    }
+  },{
+    "summary": {
+      "file_count": 29199, 
+      "experimental_strategies": [
+        {
+          "case_count": 501, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 478, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 502, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 337, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 16, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 504, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 503, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 328, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 495, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 478, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 504
+    }, 
+    "primary_site": [
+      "Bronchus and lung"
+    ], 
+    "project_id": "TCGA-LUSC", 
+    "disease_type": [
+      "Squamous Cell Neoplasms"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 31867, 
+      "experimental_strategies": [
+        {
+          "case_count": 517, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 513, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 464, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 582, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 22, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 518, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 579, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 365, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 514, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 478, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 585
+    }, 
+    "primary_site": [
+      "Bronchus and lung"
+    ], 
+    "project_id": "TCGA-LUAD", 
+    "disease_type": [
+      "Adenomas and Adenocarcinomas", 
+      "Cystic, Mucinous and Serous Neoplasms", 
+      "Acinar Cell Neoplasms"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 29489, 
+      "experimental_strategies": [
+        {
+          "case_count": 524, 
+          "experimental_strategy": "miRNA-Seq"
+        }, 
+        {
+          "case_count": 527, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 521, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 482, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 9, 
+          "experimental_strategy": "ATAC-Seq"
+        }, 
+        {
+          "case_count": 526, 
+          "experimental_strategy": "Genotyping Array"
+        }, 
+        {
+          "case_count": 528, 
+          "experimental_strategy": "Methylation Array"
+        }, 
+        {
+          "case_count": 354, 
+          "experimental_strategy": "Reverse Phase Protein Array"
+        }, 
+        {
+          "case_count": 520, 
+          "experimental_strategy": "Tissue Slide"
+        }, 
+        {
+          "case_count": 450, 
+          "experimental_strategy": "Diagnostic Slide"
+        }
+      ], 
+      "case_count": 528
+    }, 
+    "primary_site": [
+      "Lip", 
+      "Oropharynx", 
+      "Bones, joints and articular cartilage of other and unspecified sites", 
+      "Base of tongue", 
+      "Other and unspecified parts of mouth", 
+      "Tonsil", 
+      "Palate", 
+      "Gum", 
+      "Hypopharynx", 
+      "Floor of mouth", 
+      "Other and unspecified parts of tongue", 
+      "Other and ill-defined sites in lip, oral cavity and pharynx", 
+      "Larynx"
+    ], 
+    "project_id": "TCGA-HNSC", 
+    "disease_type": [
+      "Squamous Cell Neoplasms"
+    ], 
+    "program": {
+      "name": "TCGA"
+    }
+  },{
+    "summary": {
+      "file_count": 13367, 
+      "experimental_strategies": [
+        {
+          "case_count": 155, 
+          "experimental_strategy": "RNA-Seq"
+        }, 
+        {
+          "case_count": 8, 
+          "experimental_strategy": "WGS"
+        }, 
+        {
+          "case_count": 222, 
+          "experimental_strategy": "WXS"
+        }, 
+        {
+          "case_count": 499, 
+          "experimental_strategy": "Targeted Sequencing"
+        }, 
+        {
+          "case_count": 225, 
+          "experimental_strategy": "Methylation Array"
+        }
+      ], 
+      "case_count": 1132
+    }, 
+    "primary_site": [
+      "Connective, subcutaneous and other soft tissues", 
+      "Heart, mediastinum, and pleura", 
+      "Adrenal gland", 
+      "Bones, joints and articular cartilage of limbs", 
+      "Peripheral nerves and autonomic nervous system", 
+      "Hematopoietic and reticuloendothelial systems", 
+      "Uterus, NOS", 
+      "Retroperitoneum and peritoneum", 
+      "Unknown", 
+      "Other and ill-defined sites", 
+      "Renal pelvis", 
+      "Other endocrine glands and related structures", 
+      "Spinal cord, cranial nerves, and other parts of central nervous system", 
+      "Kidney", 
+      "Meninges", 
+      "Liver and intrahepatic bile ducts", 
+      "Stomach", 
+      "Lymph nodes", 
+      "Bones, joints and articular cartilage of other and unspecified sites", 
+      "Skin"
+    ], 
+    "project_id": "TARGET-NBL", 
+    "disease_type": [
+      "Not Applicable", 
+      "Neuroepitheliomatous Neoplasms"
+    ], 
+    "program": {
+      "name": "TARGET"
+    }
+  }]

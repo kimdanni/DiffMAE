@@ -108,11 +108,11 @@ class MaskedAutoencoderViT(nn.Module):
         
         # --------------------------------------------------------------------------
         # NOTE : Diffusion utils
-        self.diffusion_timestpes = 50  # Number of Diffusion Steps during training. Note, this is much smaller than ordinary (usually ~1000)
-        beta_start = 1e-4 # Default from paper
+        self.diffusion_timesteps = 1  # Number of Diffusion Steps during training. Note, this is much smaller than ordinary (usually ~1000)
+        beta_start = 0.02 # Default from paper
         beta_end = 0.02  # NOTE: This is different to accomodate the much shorter DIFFUSION_TIMESTEPS (Usually ~1000). For 1000 diffusion timesteps, use 0.02.
         clip_sample = False  # Used for better sample generation
-        self.noise_scheduler = DDPMScheduler(num_train_timesteps=self.diffusion_timestpes, beta_schedule="linear", beta_start=beta_start, beta_end=beta_end, clip_sample=clip_sample)
+        self.noise_scheduler = DDPMScheduler(num_train_timesteps=self.diffusion_timesteps, beta_schedule="linear", beta_start=beta_start, beta_end=beta_end, clip_sample=clip_sample)
         self.decoder_pos_embed = nn.Parameter(torch.zeros(1, num_patches + 1, decoder_embed_dim), requires_grad=False)  # fixed sin-cos embedding
         # timestep embedding
         self.t_embedder = TimestepEmbedder(decoder_embed_dim)
@@ -263,61 +263,64 @@ class MaskedAutoencoderViT(nn.Module):
 
     def forward_decoder(self, sequence, y, mask, ids_restore, coords, mask_ratio, kept_mask_ratio):
         """
-            sequence: [N, 3, H, W]
-            y: list of encoder features
-            
+        sequence: [N, 3, H, W]
+        y: list of encoder features
         """
-        L = ids_restore.shape[1]
+        
+        N, L = ids_restore.shape
         L_mask = int(L * mask_ratio)
         
-        # Ensure ids_restore is on the same device as noise
+        # Ensure ids_restore is on the same device as y
         device = y[0].device
 
         # Create noise and visible mask
-        noise = torch.randn(L_mask, 3, self.patch_size, self.patch_size, device=device)
-        visible_mask = torch.zeros(L - L_mask, 3, self.patch_size, self.patch_size, device=device)
-        noise = torch.cat((noise, visible_mask), dim=0)
+        noise = torch.randn(N, L_mask, 3, self.patch_size, self.patch_size, device=device)
+        visible_mask = torch.zeros(N, L - L_mask, 3, self.patch_size, self.patch_size, device=device)
+        noise = torch.cat((noise, visible_mask), dim=1)
         
-        # Ensure ids_restore is in the correct shape and expanded
-        ids_restore = ids_restore.squeeze(0)[:, None, None, None].expand(-1, 3, self.patch_size, self.patch_size)
-
-        # Perform the gather operation
-        noise = torch.gather(noise, dim=0, index=ids_restore)
-
-        # Reshape the noise into patches
-        noise = rearrange(noise, '(h w) c s1 s2 -> c (h s1) (w s2)', 
-                            s1=self.patch_size, s2=self.patch_size, w=self.img_size // self.patch_size, h=self.img_size // self.patch_size)
-        
-        batch = sequence.expand(self.diffusion_timestpes, -1, -1, -1).to(y[0].device) # batch, channel, H, W
-        
-        # # NOTE : add noise
-        t = torch.arange(0, self.noise_scheduler.num_train_timesteps, dtype=torch.long, device=y[0].device).unsqueeze(1).expand(batch.shape[0], -1)
-        
-        noise_x = self.noise_scheduler.add_noise(batch, noise, t)
-        # import matplotlib.pyplot as plt
-        # from torchvision.transforms import Lambda
-        # unnormalize = Lambda(lambda t: (t + 1) / 2)
-        # noise_x = unnormalize(noise_x)
-        noise_x = self.decoder_grid_patchify(noise_x, t)
-        x = self.mask_tokens_grid(noise_x, mask)
-        
+        # Expand ids_restore to match noise dimensions
+        ids_restore = ids_restore[:, :, None, None, None].expand(-1, -1, 3, self.patch_size, self.patch_size)
         if self.weight_fm:
             # y input: a list of Tensors (B, C, D)
             y = self.wfm(y)
+        # Iterate over the batch
+        results = []
+        for n in range(sequence.shape[0]):
+            b_ids_restore = ids_restore[n]
+            b_mask = mask[n]
+            _y = y[n].unsqueeze(0)
+            # Perform the gather operation, ensuring dimensions match
+            b_noise = torch.gather(noise[n], dim=0, index=b_ids_restore)
+            
+            # Reshape the noise into patches
+            b_noise = rearrange(b_noise, '(h w) c s1 s2 -> c (h s1) (w s2)', 
+                                s1=self.patch_size, s2=self.patch_size, 
+                                h=self.img_size // self.patch_size, w=self.img_size // self.patch_size)
+            
+            b_batch = sequence[n].unsqueeze(0).expand(self.diffusion_timesteps, -1, -1, -1).to(y[0].device) # batch, channel, H, W
+            # Add noise
+            t = torch.arange(0, self.noise_scheduler.num_train_timesteps, dtype=torch.long, device=y[0].device).unsqueeze(1).expand(self.noise_scheduler.num_train_timesteps, -1)
+            noise_x = self.noise_scheduler.add_noise(b_batch, b_noise, t)
+            noise_x = self.decoder_grid_patchify(noise_x, t)
+            x = self.mask_tokens_grid(noise_x, b_mask)
+            
+            for i, blk in enumerate(self.decoder_blocks):
+                if self.weight_fm:
+                    feat_y = _y[..., i].repeat(noise_x.shape[0], 1, 1)
+                    x = blk(x, self.dec_norms[i](feat_y))
+                else:
+                    # NOTE: not using weighted feature maps
+                    x = blk(x, _y)
 
-        for i, blk in enumerate(self.decoder_blocks):
-            if self.weight_fm:
-                feat_y = y[..., i].repeat(noise_x.shape[0], 1, 1)
-                x = blk(x, self.dec_norms[i](feat_y))
-            else:
-                # NOTE : not using weighted feature maps
-                x = blk(x, y)
+            x = self.decoder_norm(x)
+            x = self.decoder_pred(x) # N, L, patch_size**2 * 3
 
-        x = self.decoder_norm(x)
-        x = self.decoder_pred(x) # N, L, patch_size**2 *3
+            results.append(x)
 
+        # Stack results to form the final output
+        x = torch.stack(results)
         return x, noise
-    
+
     def forward_loss_noise(self, x, noise):
         """
             predict noise
@@ -328,18 +331,22 @@ class MaskedAutoencoderViT(nn.Module):
     def forward_loss(self, imgs, pred, mask, coords):
         """
         imgs: [N, 3, H, W]
-        pred: [N, L, p*p*3]
+        pred: [N, noise_batch, token_len, p*p*3]
         mask: [N, L], 0 is keep, 1 is remove, 
         """
         
-        target = self.patchify(imgs)
-        target = target.masked_select(mask.bool().unsqueeze(-1)).reshape(target.shape[0], -1, target.shape[-1])
+        target = self.patchify(imgs)  # Convert images to patches
+        target = target.masked_select(mask.bool().unsqueeze(-1)).reshape(target.shape[0], -1, target.shape[-1])  # Apply mask and reshape
+        
         if self.norm_pix_loss:
             mean = target.mean(dim=-1, keepdim=True)
             var = target.var(dim=-1, keepdim=True)
             target = (target - mean) / (var + 1.e-6)**.5
+
         # Expand the second dimension of target to match the second dimension of pred
-        target = target.repeat(1, pred.shape[1] // target.shape[1], 1)
+        target = target.unsqueeze(1).repeat(1, pred.shape[1], 1, 1)  # [N, noise_batch, token_len, p*p*3]
+
+        # Compute loss
         loss = (pred - target) ** 2
         loss = loss.mean()
 

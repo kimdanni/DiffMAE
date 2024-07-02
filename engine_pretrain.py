@@ -33,6 +33,7 @@ def visualize_masked_patches(masked_patch, epoch, output_dir, is_pred=True):
         output_dir = Path(output_dir)
         
     p = 16 # NOTE : hard-coded for now
+    masked_patch = masked_patch[0]
     N, num_patches, D = masked_patch.shape
     rows = cols = int(np.ceil(np.sqrt(num_patches)))
     
