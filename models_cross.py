@@ -108,8 +108,9 @@ class MaskedAutoencoderViT(nn.Module):
         
         # --------------------------------------------------------------------------
         # NOTE : Diffusion utils
-        self.diffusion_timesteps = 1  # Number of Diffusion Steps during training. Note, this is much smaller than ordinary (usually ~1000)
-        beta_start = 0.02 # Default from paper
+        self.diffusion_timesteps = 1000  # Number of Diffusion Steps during training. Note, this is much smaller than ordinary (usually ~1000)
+        # TODO : hard coded here, change noise sampler to args
+        beta_start = 0.0001 # Default from paper
         beta_end = 0.02  # NOTE: This is different to accomodate the much shorter DIFFUSION_TIMESTEPS (Usually ~1000). For 1000 diffusion timesteps, use 0.02.
         clip_sample = False  # Used for better sample generation
         self.noise_scheduler = DDPMScheduler(num_train_timesteps=self.diffusion_timesteps, beta_schedule="linear", beta_start=beta_start, beta_end=beta_end, clip_sample=clip_sample)
